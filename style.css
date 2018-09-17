@@ -1,0 +1,186 @@
+.img {
+    opacity: 0.30;
+}
+
+
+.text {
+    text-align: center;
+    position: absolute;
+    font-size: 2.5em;
+    background-color: rgba(145, 145, 145, .7);
+    border-radius: 10px;
+    color: black;
+    top: 5%;
+}
+
+/* gimli*/
+
+.text2 {
+    text-align: center;
+    position: absolute;
+    font-size: 2.5em;
+    border-radius: 10px;
+    color: black;
+    top: 5%;
+    width: 100%;
+}
+
+.barre{
+    text-decoration: line-through;
+}
+
+.orange {
+    color: orange;
+}
+
+.name {
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    top: 50%;
+    left: 25%;
+}
+
+
+.contenaire {
+    position: relative;
+}
+
+/*hover*/
+
+.img:hover {
+    opacity: 1.0;
+    transition: opacity 1s;
+
+}
+
+.contenaire:hover .text {
+    display: none;
+}
+
+.contenaire:hover .name{
+   display: none;
+}
+
+.contenaire:hover .orange {
+    color: transparent;
+    transition: color 1s;
+}
+
+.contenaire:hover .name {
+    font-size: 3em;
+    top: 80%;
+    transition: 1s;
+}
+
+/*police */
+
+
+@font-face{
+    font-family: "partybusiness";
+    src: url(nancy-lorenz_party-business/partybusiness.ttf);
+}
+
+@font-face{
+    font-family: "anicm";
+    src: url("pete-klassen_aniron/anicm___.ttf")
+}
+
+@font-face{
+    font-family: 'symbols';
+    src: url(tengwar_annatar/tngani.ttf);
+}
+
+.symb{
+    font-family: 'symbols';
+}
+
+
+body{
+ 
+    font-family: 'partybusiness';
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'anicm';
+}
+
+/*taille text*/
+
+p, h5{
+    font-size: 1.3em;
+}
+
+a{
+    font-size: 1.5em;
+}
+
+.jtaille{
+    font-size: 2em;
+}
+/* nav et footer */
+
+nav,footer,.bgorange{
+    background-color: #fe661d;
+}
+
+.bb:hover{  
+    color: white;
+    border-bottom : 3px solid white;
+}
+
+/* Body */
+
+.jcenter{
+    text-align:center;
+}
+
+.jomax{
+    max-height : 500px;
+}
+
+.textwhite{
+    color: white;
+}
+
+.nav-pills .nav-link.active{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.fellows, .besthunters, .jointhearmy{
+    background-image: url("integration_maquette_finale/bg_light.png");
+}
+
+.getmyreward, .thering, .contactus{
+    background-image: url("integration_maquette_finale/bg_dark.png");
+}
+
+/*pills*/
+
+.jpills a{
+    color: gray;
+}
+
+.jpills:hover a{
+    color: #fe661d;
+    border-bottom: 3px solid #fe661d;
+}
+
+.jpills .symb{
+    display: none;
+}
+
+.jpills:hover .symb{
+    display:inline;
+}
+
+/* portraits*/
+
+.jdark{
+    background-color: black;
+}
+
+.jborder{
+    border:5px solid black;
+}
