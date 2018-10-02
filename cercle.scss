@@ -1,0 +1,44 @@
+
+@mixin cercle($height,$width,$border,$color,$color2){
+  height :$height;
+  width:$width;
+  border-width:$border;
+  border-style:solid;
+  border-color:$color;
+  border-radius:4em;
+  box-shadow:2px 2px 5px $color2;
+}
+
+.cercle1{
+  @include cercle(4em,4em,0.3em,orange,orange);
+}
+
+.cercle2{
+  @include cercle(6em,6em,0.6em,yellow,yellow);
+}
+
+@for $i from 1 through 6 {
+  .cercle-#{$i} {
+  height : 2em*$i;
+  width:2em*$i;
+  border-width:2px*$i;
+  border-style:solid;
+  border-color:dark;
+  border-radius:4em*$i;
+  box-shadow:0.3em 0.1em 1em black;
+  margin :-0.5em*$i;
+  }
+}
+
+
+.first {
+  display:flex;
+}
+
+.second{
+  display:flex;
+}
+
+.third{
+  display:flex;
+}
